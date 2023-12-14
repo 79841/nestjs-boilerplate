@@ -27,6 +27,7 @@ export class UsersService {
   }
 
   getUserByUsername(username: string) {
+    console.log('console test');
     return this.users.find((user) => user.username === username);
   }
 }
