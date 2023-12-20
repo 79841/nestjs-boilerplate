@@ -31,7 +31,6 @@ export class CustomersController {
     } else {
       res.status(400).send({ msg: 'Customer not found!' });
     }
-    return this.customersService.findCustomerById(id);
   }
 
   @Get('/search/:id')
